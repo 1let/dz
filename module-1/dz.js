@@ -14,11 +14,11 @@ let userSurname = "нАзаРОв";
 
 let formattedUserName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
 
-let nameMessage = (userName !== formattedUserName) ? "Имя было преобразовано" : "Имя осталось без изменений";
+let nameMessage = userName !== formattedUserName ? "Имя было преобразовано" : "Имя осталось без изменений";
 
 let formattedUserSurname = userSurname.charAt(0).toUpperCase() + userSurname.slice(1).toLowerCase();
 
-let surnameMessage = (userSurname !== formattedUserSurname) ? "Фамилия была преобразована" : "Фамилия осталась без изменений";
+let surnameMessage = userSurname !== formattedUserSurname ? "Фамилия была преобразована" : "Фамилия осталась без изменений";
 
 console.log(formattedUserName);
 console.log(nameMessage);
